@@ -141,9 +141,11 @@ function answer(index) {
     // }
 }
 
-
+// let questionNumber = 2; //meine idee hochzählen:  wird hochgezählt damit man sieht bei welcher frage man ist 
 function nextQuestion() {
     currentQuestion++; // frage wird erhöht von 0 auf 1 und so weiter 1 auf 2 
+    // document.getElementById('current-question-number').innerHTML = questionNumber++;  //meine idee hochzählen: zählt beim klicken auf next die frage hoch.
+    document.getElementById('current-question-number').innerHTML = currentQuestion + 1;  //einfacher als meine function 
     document.getElementById('next-button').disabled = true; //setzt den button auf disabled
     resetAnswerButtons()  // entfernt alle klassen z.b. grün / rot unterlegung für richtig und flasch
     showCurrentQuestion()  // läd die nächste frage
