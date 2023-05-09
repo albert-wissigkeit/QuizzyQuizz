@@ -12,3 +12,12 @@
     border-top: 1px solid rgba(0, 0, 0, 0.327);
     padding-top: 12px;
 }
+
+.quiz-answer-card:hover {
+    cursor: pointer;
+    background-color: #5c97c124;
+}
+
+.bg-success, .bg-danger {
+    color: white!important;
+}
