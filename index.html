@@ -25,8 +25,41 @@
 
     <div class="main-card-container">
         <div class="card" style="width: 30rem;">
-            <img src="./img/quiz.png" class="card-img-top" alt="quiz-img">
-            <div class="card-body">
+            <img src="./img/quiz.png" class="card-img-top" alt="quiz-img" id="hide-by-win">
+
+
+
+
+            <!-- progress bar -->
+
+            <div class="progress" role="progressbar" aria-label="Animated striped example">
+                <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated"
+                    style="width: 0%"></div>
+            </div>
+
+            <!-- progress bar ende -->
+
+            <!-- endscreen -->
+
+            <div class="card-body" id="endScreen" style="display: none;">
+                <div class="text-center final-headline">Quizz Beendet!
+                </div>
+                <div class="text-center"><h2>Feierabend Bier verdient :)</h2></div>
+
+
+                <!-- <div><img class="width-100" src="./img/beer.jpg" alt="beer-img"></div> -->
+
+                <div class="text-center">Du hast <b id="rightQuestionsAnswered">X</b> Fragen von <b
+                        id="allQuestionsAnswered">X</b> geschafft!</div>
+                        <div class="button-center">
+                            <button onclick="restartGame()" class="btn btn-primary">Erneut Spielen</button>
+                        </div>
+            </div>
+
+            
+            <!-- endscreen ende -->
+
+            <div class="card-body" id="questionBody">
                 <h5 class="card-title" id="question">Frage</h5>
 
                 <div class="card quiz-answer-card mb-3">
@@ -53,7 +86,8 @@
                 <div class="question-footer">
                     <span><b id="current-question-number">1</b> von <b id="all-questions-number">1</b> Fragen</span>
 
-                    <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
+                    <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste
+                        Frage</button>
                 </div>
 
             </div>
@@ -65,6 +99,11 @@
                 href="https://pixabay.com/de/users/tumisu-148124/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2004332">Tumisu</a>
             auf <a
                 href="https://pixabay.com/de//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2004332">Pixabay</a>
+        </div>
+        <div>Bild von <a
+                href="https://pixabay.com/de/users/photomix-company-1546875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2166004">Photo
+                Mix</a> auf <a
+                href="https://pixabay.com/de//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2166004">Pixabay</a>
         </div>
     </footer>
 </body>

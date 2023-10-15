@@ -21,3 +21,22 @@
 .bg-success, .bg-danger {
     color: white!important;
 }
+
+.width-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.final-headline {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.button-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
